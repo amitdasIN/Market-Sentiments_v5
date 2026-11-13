@@ -1,0 +1,537 @@
+{
+  "meta": {
+    "title": "THE GOD'S EYE — OBSERVER",
+    "subtitle": "SIGNAL INTELLIGENCE ARRAY • PATTERN RECOGNITION ENGINE",
+    "lat": "14.2435°N",
+    "long": "51.9072°E",
+    "version": "5.0.0"
+  },
+  "left_hud": {
+    "signal_throughput": 94,
+    "processing_load": "Nominal",
+    "insider_options": {
+      "call_oi": 83,
+      "put_oi": 35,
+      "buildup": "Short"
+    },
+    "pcr_oi_data": {
+      "pcr": 0.57,
+      "oi_chg_plus": 55,
+      "oi_chg_minus": 47
+    },
+    "dollar_pulse": {
+      "score": "+1.8",
+      "label": "USD news strength",
+      "dxy": "+0.16%",
+      "us10y": "+0.51%"
+    },
+    "risk_gauge": {
+      "status": "Risk-off",
+      "sp500": "-1.65%",
+      "vix": "+7.59%"
+    }
+  },
+  "right_hud": {
+    "node_activity": {
+      "node1": 23,
+      "node2": 12,
+      "node3": 38,
+      "node4": 27,
+      "observer_active": "16d 21h"
+    },
+    "retail_buildup": {
+      "ce_buildup": 48,
+      "pe_buildup": 23,
+      "skew": "Bullish"
+    },
+    "fii_institutional": {
+      "long_pct": 58,
+      "short_pct": 56,
+      "net_bias": "Net Long"
+    },
+    "haven_vs_risk": {
+      "jpy_chf_gold": "-5.2",
+      "aud_btc_eth": "-5.6",
+      "lead": "Havens lead"
+    },
+    "headline_flow": {
+      "count": 436,
+      "label": "Headlines scanned today"
+    }
+  },
+  "gift_nifty_cue": {
+    "gift_nifty": 25114.5,
+    "nifty_spot": 25030.35,
+    "implied_open_low": 25085,
+    "implied_open_high": 25135
+  },
+  "primary_cards": [
+    {
+      "id": "NIFTY",
+      "name": "NIFTY",
+      "yf_ticker": "^NSEI",
+      "price": 25030.35,
+      "prevClose": 25168.2,
+      "open": 25140.0,
+      "high": 25185.5,
+      "low": 24980.1,
+      "change": -137.85,
+      "changePct": -0.55,
+      "score": -5.3,
+      "sentiment": "BEARISH",
+      "subtext": "⚡ Bearish divergence",
+      "oldMethodScore": -4.1,
+      "oldMethodLabel": "BEARISH",
+      "headlines": 64,
+      "sparkline": [
+        62,
+        65,
+        58,
+        52,
+        48,
+        51,
+        43,
+        38,
+        34,
+        30
+      ],
+      "platforms": {
+        "news": 38,
+        "youtube": 41,
+        "twitter": 35,
+        "instagram": 44,
+        "reddit": 39,
+        "web": 42
+      }
+    },
+    {
+      "id": "SENSEX",
+      "name": "SENSEX",
+      "yf_ticker": "^BSESN",
+      "price": 81028.02,
+      "prevClose": 81652.4,
+      "open": 81590.0,
+      "high": 81710.25,
+      "low": 80890.15,
+      "change": -624.38,
+      "changePct": -0.76,
+      "score": -7.7,
+      "sentiment": "EXTREMELY BEARISH",
+      "subtext": "↑ still building\n⚡ Bearish divergence",
+      "oldMethodScore": -6.2,
+      "oldMethodLabel": "EXTREMELY BEARISH",
+      "headlines": 58,
+      "sparkline": [
+        68,
+        64,
+        60,
+        53,
+        49,
+        44,
+        39,
+        32,
+        27,
+        22
+      ],
+      "platforms": {
+        "news": 34,
+        "youtube": 37,
+        "twitter": 31,
+        "instagram": 40,
+        "reddit": 35,
+        "web": 38
+      }
+    },
+    {
+      "id": "BANKNIFTY",
+      "name": "BANKNIFTY",
+      "yf_ticker": "^NSEBANK",
+      "price": 59086.0,
+      "prevClose": 59412.5,
+      "open": 59380.0,
+      "high": 59495.0,
+      "low": 58920.3,
+      "change": -326.5,
+      "changePct": -0.55,
+      "score": -5.1,
+      "sentiment": "BEARISH",
+      "subtext": "⚡ Bearish divergence",
+      "oldMethodScore": -3.8,
+      "oldMethodLabel": "BEARISH",
+      "headlines": 49,
+      "sparkline": [
+        60,
+        58,
+        55,
+        57,
+        50,
+        46,
+        44,
+        40,
+        36,
+        33
+      ],
+      "platforms": {
+        "news": 39,
+        "youtube": 42,
+        "twitter": 36,
+        "instagram": 43,
+        "reddit": 40,
+        "web": 41
+      }
+    },
+    {
+      "id": "GOLD",
+      "name": "GOLD",
+      "yf_ticker": "GC=F",
+      "price": 4048.89,
+      "prevClose": 4086.4,
+      "open": 4082.1,
+      "high": 4094.0,
+      "low": 4031.5,
+      "change": -37.51,
+      "changePct": -0.92,
+      "score": -8.8,
+      "sentiment": "EXTREMELY BEARISH",
+      "subtext": "↑ still building",
+      "oldMethodScore": -6.5,
+      "oldMethodLabel": "EXTREMELY BEARISH",
+      "headlines": 40,
+      "sparkline": [
+        72,
+        66,
+        61,
+        55,
+        48,
+        42,
+        35,
+        30,
+        24,
+        18
+      ],
+      "platforms": {
+        "news": 32,
+        "youtube": 35,
+        "twitter": 30,
+        "instagram": 38,
+        "reddit": 34,
+        "web": 36
+      }
+    },
+    {
+      "id": "SILVER",
+      "name": "SILVER",
+      "yf_ticker": "SI=F",
+      "price": 51.91,
+      "prevClose": 52.28,
+      "open": 52.2,
+      "high": 52.55,
+      "low": 51.6,
+      "change": -0.37,
+      "changePct": -0.71,
+      "score": -4.6,
+      "sentiment": "BEARISH",
+      "subtext": "→ steady pressure",
+      "oldMethodScore": -3.4,
+      "oldMethodLabel": "BEARISH",
+      "headlines": 20,
+      "sparkline": [
+        58,
+        55,
+        59,
+        52,
+        48,
+        50,
+        44,
+        41,
+        39,
+        36
+      ],
+      "platforms": {
+        "news": 40,
+        "youtube": 42,
+        "twitter": 38,
+        "instagram": 44,
+        "reddit": 41,
+        "web": 42
+      }
+    },
+    {
+      "id": "CRUDEOIL",
+      "name": "CRUDEOIL",
+      "yf_ticker": "CL=F",
+      "price": 90.71,
+      "prevClose": 90.85,
+      "open": 90.9,
+      "high": 91.85,
+      "low": 89.95,
+      "change": -0.14,
+      "changePct": -0.15,
+      "score": -0.3,
+      "sentiment": "NEUTRAL",
+      "subtext": "⚡ Bullish divergence",
+      "forceTeal": true,
+      "oldMethodScore": -1.9,
+      "oldMethodLabel": "NEUTRAL",
+      "headlines": 35,
+      "sparkline": [
+        45,
+        52,
+        47,
+        54,
+        46,
+        55,
+        48,
+        53,
+        49,
+        51
+      ],
+      "platforms": {
+        "news": 49,
+        "youtube": 51,
+        "twitter": 48,
+        "instagram": 52,
+        "reddit": 50,
+        "web": 50
+      }
+    },
+    {
+      "id": "BITCOIN",
+      "name": "BITCOIN",
+      "yf_ticker": "BTC-USD",
+      "binance_symbol": "BTCUSDT",
+      "coingecko_id": "bitcoin",
+      "price": 75496.74,
+      "prevClose": 76890.0,
+      "open": 76750.0,
+      "high": 77120.0,
+      "low": 74980.0,
+      "change": -1393.26,
+      "changePct": -1.81,
+      "score": -10.0,
+      "sentiment": "EXTREMELY BEARISH",
+      "subtext": "↑ still building",
+      "oldMethodScore": -6.9,
+      "oldMethodLabel": "EXTREMELY BEARISH",
+      "headlines": 36,
+      "sparkline": [
+        75,
+        69,
+        63,
+        56,
+        49,
+        41,
+        33,
+        25,
+        19,
+        12
+      ],
+      "platforms": {
+        "news": 28,
+        "youtube": 31,
+        "twitter": 26,
+        "instagram": 34,
+        "reddit": 29,
+        "web": 32
+      }
+    },
+    {
+      "id": "NASDAQ",
+      "name": "NASDAQ",
+      "yf_ticker": "^IXIC",
+      "price": 24315.0,
+      "prevClose": 24518.4,
+      "open": 24490.0,
+      "high": 24560.2,
+      "low": 24210.8,
+      "change": -203.4,
+      "changePct": -0.83,
+      "score": -5.2,
+      "sentiment": "BEARISH",
+      "subtext": "→ consolidating",
+      "oldMethodScore": -4.4,
+      "oldMethodLabel": "BEARISH",
+      "headlines": 52,
+      "sparkline": [
+        64,
+        61,
+        57,
+        54,
+        50,
+        47,
+        45,
+        42,
+        38,
+        35
+      ],
+      "platforms": {
+        "news": 39,
+        "youtube": 41,
+        "twitter": 37,
+        "instagram": 43,
+        "reddit": 40,
+        "web": 41
+      }
+    },
+    {
+      "id": "DJI",
+      "name": "DJI",
+      "yf_ticker": "^DJI",
+      "price": 51523.06,
+      "prevClose": 52115.16,
+      "open": 52050.0,
+      "high": 52140.0,
+      "low": 51410.5,
+      "change": -592.1,
+      "changePct": -1.14,
+      "score": -7.6,
+      "sentiment": "EXTREMELY BEARISH",
+      "subtext": "↑ still building",
+      "oldMethodScore": -6.8,
+      "oldMethodLabel": "EXTREMELY BEARISH",
+      "headlines": 44,
+      "sparkline": [
+        70,
+        65,
+        59,
+        54,
+        48,
+        43,
+        37,
+        31,
+        26,
+        21
+      ],
+      "platforms": {
+        "news": 34,
+        "youtube": 36,
+        "twitter": 32,
+        "instagram": 39,
+        "reddit": 35,
+        "web": 37
+      }
+    },
+    {
+      "id": "GLOBALRISK",
+      "name": "GLOBALRISK",
+      "yf_ticker": "^VIX",
+      "price": 21.45,
+      "prevClose": 19.94,
+      "open": 20.1,
+      "high": 22.15,
+      "low": 19.8,
+      "change": 1.51,
+      "changePct": 7.59,
+      "score": -7.1,
+      "sentiment": "EXTREMELY BEARISH",
+      "subtext": "→ already easing off",
+      "oldMethodScore": -5.8,
+      "oldMethodLabel": "EXTREMELY BEARISH",
+      "headlines": 61,
+      "sparkline": [
+        69,
+        64,
+        58,
+        52,
+        45,
+        38,
+        32,
+        28,
+        31,
+        34
+      ],
+      "platforms": {
+        "news": 33,
+        "youtube": 35,
+        "twitter": 30,
+        "instagram": 37,
+        "reddit": 32,
+        "web": 34
+      }
+    }
+  ],
+  "commodities_crypto_cards": {
+    "commodities": [
+      {
+        "id": "GOLD_XAU",
+        "name": "GOLD (XAU/USD)",
+        "price": 4048.89,
+        "changePct": -0.92,
+        "score": -5.5,
+        "sentiment": "BEARISH",
+        "headlines": 40,
+        "subtext": ""
+      },
+      {
+        "id": "SILVER_XAG",
+        "name": "SILVER (XAG/USD)",
+        "price": 51.91,
+        "changePct": -0.71,
+        "score": -5.8,
+        "sentiment": "BEARISH",
+        "headlines": 20,
+        "subtext": ""
+      },
+      {
+        "id": "WTI_CRUDE",
+        "name": "WTI CRUDE",
+        "price": 90.71,
+        "changePct": -0.15,
+        "score": -4.0,
+        "sentiment": "BEARISH",
+        "headlines": 35,
+        "subtext": "⚡ bullish divergence"
+      }
+    ],
+    "crypto": [
+      {
+        "id": "BTC_USD",
+        "name": "BTC/USD",
+        "binance_symbol": "BTCUSDT",
+        "coingecko_id": "bitcoin",
+        "price": 75496.74,
+        "changePct": -1.81,
+        "score": -8.1,
+        "sentiment": "EXTREMELY BEARISH",
+        "headlines": 36,
+        "subtext": "still building"
+      },
+      {
+        "id": "ETH_USD",
+        "name": "ETH/USD",
+        "binance_symbol": "ETHUSDT",
+        "coingecko_id": "ethereum",
+        "price": 2384.5,
+        "changePct": -1.12,
+        "score": -3.9,
+        "sentiment": "BEARISH",
+        "headlines": 25,
+        "subtext": ""
+      },
+      {
+        "id": "SOL_USD",
+        "name": "SOL/USD",
+        "binance_symbol": "SOLUSDT",
+        "coingecko_id": "solana",
+        "price": 148.2,
+        "changePct": -0.45,
+        "score": -1.7,
+        "sentiment": "NEUTRAL",
+        "headlines": 27,
+        "subtext": ""
+      },
+      {
+        "id": "XRP_USD",
+        "name": "XRP/USD",
+        "binance_symbol": "XRPUSDT",
+        "coingecko_id": "ripple",
+        "price": 2.14,
+        "changePct": -0.88,
+        "score": -2.4,
+        "sentiment": "BEARISH",
+        "headlines": 27,
+        "subtext": ""
+      }
+    ]
+  }
+}

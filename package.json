@@ -1,0 +1,10 @@
+{
+  "name": "the-gods-eye-observer-terminal",
+  "version": "5.0.0",
+  "description": "The God's Eye - Observer Signal Intelligence Array & Market Sentiment HUD",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 server.py"
+  },
+  "license": "MIT"
+}

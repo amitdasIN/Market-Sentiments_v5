@@ -1,0 +1,242 @@
+/* THE GOD'S EYE — OBSERVER | Sci-Fi HUD Terminal Stylesheet */
+:root {
+  --bg-deep: #040a14;
+  --bg-panel: rgba(11, 22, 40, 0.78);
+  --cyan-glow: #38e8ff;
+  --rose-glow: #ff5b6e;
+  --amber-glow: #fbbf24;
+  --emerald-glow: #22e58b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at 50% 12%, #0c1f3d 0%, #050c18 58%, #02060d 100%);
+  color: #e6f1ff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.font-hud {
+  font-family: 'Orbitron', 'JetBrains Mono', sans-serif;
+}
+
+.font-mono-hud {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.hud-grid-bg {
+  background-image:
+    linear-gradient(rgba(56, 232, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 232, 255, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.hud-panel {
+  position: relative;
+  background: linear-gradient(180deg, rgba(14, 28, 50, 0.86) 0%, rgba(7, 15, 29, 0.94) 100%);
+  border: 1px solid rgba(56, 232, 255, 0.28);
+  border-radius: 12px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.55), inset 0 0 18px rgba(56, 232, 255, 0.05);
+}
+
+.hud-panel::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 14px;
+  height: 14px;
+  border-top: 2px solid #7ceeff;
+  border-left: 2px solid #7ceeff;
+  border-top-left-radius: 12px;
+  pointer-events: none;
+}
+
+.hud-panel::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 14px;
+  height: 14px;
+  border-bottom: 2px solid #7ceeff;
+  border-right: 2px solid #7ceeff;
+  border-bottom-right-radius: 12px;
+  pointer-events: none;
+}
+
+.hud-card-bearish {
+  position: relative;
+  background: linear-gradient(180deg, rgba(48, 22, 36, 0.74) 0%, rgba(16, 14, 28, 0.92) 55%, rgba(11, 18, 34, 0.95) 100%);
+  border: 1.5px solid rgba(255, 102, 118, 0.68);
+  border-radius: 14px;
+  box-shadow: 0 0 22px rgba(255, 91, 110, 0.18), inset 0 0 24px rgba(255, 91, 110, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hud-card-bearish:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(255, 91, 110, 0.34), inset 0 0 28px rgba(255, 91, 110, 0.18);
+}
+
+.hud-card-bearish::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid #ff9aa6;
+  border-left: 2px solid #ff9aa6;
+  border-top-left-radius: 14px;
+  pointer-events: none;
+}
+
+.hud-card-bearish::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 2px solid #ff9aa6;
+  border-right: 2px solid #ff9aa6;
+  border-bottom-right-radius: 14px;
+  pointer-events: none;
+}
+
+.hud-card-bullish {
+  position: relative;
+  background: linear-gradient(180deg, rgba(16, 62, 74, 0.74) 0%, rgba(11, 24, 42, 0.92) 55%, rgba(9, 18, 34, 0.95) 100%);
+  border: 1.5px solid rgba(45, 226, 200, 0.68);
+  border-radius: 14px;
+  box-shadow: 0 0 22px rgba(45, 226, 200, 0.18), inset 0 0 24px rgba(45, 226, 200, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hud-card-bullish:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(45, 226, 200, 0.34), inset 0 0 28px rgba(45, 226, 200, 0.18);
+}
+
+.hud-card-bullish::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid #7efce8;
+  border-left: 2px solid #7efce8;
+  border-top-left-radius: 14px;
+  pointer-events: none;
+}
+
+.hud-card-bullish::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 2px solid #7efce8;
+  border-right: 2px solid #7efce8;
+  border-bottom-right-radius: 14px;
+  pointer-events: none;
+}
+
+.hud-card-neutral {
+  position: relative;
+  background: linear-gradient(180deg, rgba(22, 38, 68, 0.78) 0%, rgba(10, 19, 36, 0.94) 100%);
+  border: 1.5px solid rgba(110, 155, 235, 0.58);
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(86, 138, 230, 0.15), inset 0 0 20px rgba(86, 138, 230, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hud-card-neutral::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid #a5c4ff;
+  border-left: 2px solid #a5c4ff;
+  border-top-left-radius: 14px;
+  pointer-events: none;
+}
+
+.hud-card-neutral::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 2px solid #a5c4ff;
+  border-right: 2px solid #a5c4ff;
+  border-bottom-right-radius: 14px;
+  pointer-events: none;
+}
+
+.old-method-btn {
+  background: rgba(14, 34, 62, 0.85);
+  border: 1px solid rgba(56, 232, 255, 0.45);
+  color: #8be9fd;
+  border-radius: 8px;
+  transition: all 0.18s ease;
+}
+
+.old-method-btn:hover {
+  background: rgba(56, 232, 255, 0.16);
+  border-color: #38e8ff;
+  color: #ffffff;
+}
+
+@keyframes pulseWave {
+  0% { stroke-dashoffset: 240; }
+  100% { stroke-dashoffset: 0; }
+}
+
+.ecg-path {
+  stroke-dasharray: 240;
+  animation: pulseWave 3.2s linear infinite;
+}
+
+@keyframes recBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+
+.rec-dot {
+  animation: recBlink 1.2s infinite;
+}
+
+@keyframes tickPulse {
+  0% { background-color: rgba(56, 232, 255, 0.35); }
+  100% { background-color: rgba(2, 6, 23, 0.78); }
+}
+
+.price-flash {
+  animation: tickPulse 0.75s ease-out;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050c18;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1b365d;
+  border-radius: 999px;
+}

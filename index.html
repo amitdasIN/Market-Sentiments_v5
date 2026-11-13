@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE GOD'S EYE — OBSERVER | Signal Intelligence Array</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700;800&family=Orbitron:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="hud-grid-bg">
+
+  <div class="max-w-[1620px] mx-auto px-3 sm:px-5 py-3 space-y-4">
+
+    <header class="hud-panel px-4 py-3">
+      <div class="flex flex-wrap items-center justify-between gap-3 border-b border-cyan-500/20 pb-2.5">
+        <div class="flex items-center gap-3">
+          <button onclick="triggerFullSync('MANUAL_SYNC')" class="px-3 py-1 rounded-lg bg-[#0d1f3a] hover:bg-[#143059] border border-cyan-400/40 text-xs font-hud font-bold tracking-wider text-cyan-200 flex items-center gap-1.5 cursor-pointer transition">
+            <span>≡</span>
+            <span>SYNC</span>
+            <span id="sync-countdown-num" class="text-[10px] font-mono-hud text-cyan-400 ml-1">15s</span>
+          </button>
+          <span class="hidden md:inline-block text-[11px] font-mono-hud tracking-widest text-slate-300">
+            LAT 14.2435°N &nbsp;•&nbsp; LONG 51.9072°E
+          </span>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3 text-xs font-mono-hud">
+          <span id="hud-market-status-pill" class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full text-xs font-bold bg-white text-slate-900">
+            <span id="hud-market-status-dot" class="w-2 h-2 rounded-full bg-slate-800"></span>
+            <span id="hud-market-status-text">Market Closed</span>
+          </span>
+
+          <span id="hud-updated-timestamp" class="text-slate-200 font-semibold">
+            Updated: 13 Nov 2026, 11:18 PM IST
+          </span>
+
+          <span class="inline-flex items-center gap-1 text-[#ff5b6e] font-bold tracking-wider">
+            <span class="rec-dot w-2 h-2 rounded-full bg-[#ff5b6e]"></span>
+            <span>REC</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-between gap-4 pt-2.5">
+        <div>
+          <div class="flex items-center gap-2.5">
+            <span class="text-2xl sm:text-3xl text-[#5ceeff] drop-shadow-[0_0_10px_rgba(56,232,255,0.85)]">👁</span>
+            <h1 class="text-xl sm:text-3xl font-hud font-black tracking-wider text-[#66f0ff] drop-shadow-[0_0_14px_rgba(56,232,255,0.45)]">
+              THE GOD’S EYE <span class="text-slate-200 font-bold text-lg sm:text-2xl">— OBSERVER</span>
+            </h1>
+          </div>
+          <p class="text-[11px] font-hud tracking-[0.22em] text-slate-400 uppercase mt-1">
+            SIGNAL INTELLIGENCE ARRAY &nbsp;•&nbsp; PATTERN RECOGNITION ENGINE
+          </p>
+        </div>
+
+        <div class="hud-panel px-3.5 py-2 min-w-[230px]">
+          <div class="flex items-center justify-between text-[10px] font-hud tracking-widest text-cyan-300 mb-1">
+            <span>• LIVE — TRACKING ACTIVE</span>
+            <span id="sync-status-badge" class="text-[9px] text-emerald-400">READY</span>
+          </div>
+          <svg viewBox="0 0 220 26" class="w-full h-6">
+            <polyline
+              class="ecg-path"
+              fill="none"
+              stroke="#5ceeff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              points="0,13 28,13 36,4 44,22 52,9 60,13 98,13 106,3 114,23 122,8 130,13 168,13 176,5 184,21 192,13 220,13"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div id="gift-nifty-cue-strip" class="mt-3 pt-2.5 border-t border-cyan-500/20"></div>
+    </header>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-3.5 items-start">
+      <aside id="left-hud-column" class="lg:col-span-2 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-1 gap-3"></aside>
+
+      <main class="lg:col-span-8 space-y-5">
+        <section id="primary-hud-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-3"></section>
+
+        <section class="space-y-3 pt-1">
+          <div class="text-[11px] font-hud font-bold tracking-widest text-cyan-300 uppercase">
+            COMMODITIES (USD)
+          </div>
+          <div id="commodities-hud-grid" class="grid grid-cols-1 sm:grid-cols-3 gap-3"></div>
+
+          <div class="text-[11px] font-hud font-bold tracking-widest text-cyan-300 uppercase pt-2">
+            CRYPTO (USD)
+          </div>
+          <div id="crypto-hud-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3"></div>
+
+          <div class="hud-panel p-3.5 text-xs">
+            <div class="font-bold text-amber-300 flex items-center gap-1.5 mb-1">
+              <span>🔥</span>
+              <span>Crypto Buzz</span>
+            </div>
+            <p class="text-slate-300 leading-relaxed">
+              The coins making the most noise in today's news, ranked by how much news coverage they're getting (newer headlines count more). Score = sentiment of those headlines. BTC, ETH, SOL and XRP have their own cards above and stablecoins are left out. Click any asset card above for live OHLC &amp; 6-platform sentiment telemetry.
+            </p>
+            <div id="crypto-buzz-scanned" class="text-[11px] font-mono-hud text-slate-400 mt-1.5">
+              Scanned at 11:18 PM IST.
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <aside id="right-hud-column" class="lg:col-span-2 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-1 gap-3"></aside>
+    </div>
+  </div>
+
+  <div id="asset-detail-modal" onclick="closeAssetModal()" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4">
+    <div onclick="event.stopPropagation()" id="asset-modal-body" class="hud-panel max-w-2xl w-full p-5 shadow-2xl"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
